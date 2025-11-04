@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page - Laxmi Khanda</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #1c92d2, #f2fcfe);
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(10px);
+      padding: 20px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 26px;
+      color: #0078ff;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      margin: 0 15px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #0078ff;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 80px 60px;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      flex: 1;
+      min-width: 280px;
+      animation: fadeInUp 1.2s ease;
+    }
+
+    .hero-text h2 {
+      font-size: 48px;
+      color: #222;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      margin-top: 20px;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .hero-text button {
+      margin-top: 25px;
+      padding: 12px 30px;
+      background: #0078ff;
+      border: none;
+      border-radius: 30px;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .hero-text button:hover {
+      background: #005fcc;
+      transform: scale(1.05);
+    }
+
+    .hero img {
+      flex: 1;
+      width: 400px;
+      border-radius: 20px;
+      animation: float 3s ease-in-out infinite;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-15px); }
+    }
+
+    section.features {
+      background: #fff;
+      padding: 60px;
+      text-align: center;
+    }
+
+    section.features h3 {
+      font-size: 32px;
+      color: #0078ff;
+      margin-bottom: 30px;
+    }
+
+    .features-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .feature {
+      background: #f7faff;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .feature:hover {
+      transform: translateY(-10px);
+      background: #e6f3ff;
+    }
+
+    footer {
+      background: #0078ff;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 50px;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      header { flex-direction: column; }
+      .hero { flex-direction: column; text-align: center; }
+      .hero img { width: 80%; margin-top: 30px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🚀 Laxmi Khanda</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#features">Features</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h2>Welcome to My Landing Page</h2>
+      <p>
+        I'm <strong>Laxmi Khanda</strong>, a passionate <b>CSE student at UEMK</b>.  
+        Skilled in <b>C, Python, English, and Bengali</b>.  
+        Explore my work, creativity, and ideas through this stylish modern landing page.
+      </p>
+      <button>Explore Now</button>
+    </div>
+    <img src="https://cdn.pixabay.com/photo/2017/01/10/19/05/laptop-1978652_1280.jpg" alt="Landing Page Image">
+  </section>
+
+  <section class="features" id="features">
+    <h3>🔥 Key Features</h3>
+    <div class="features-container">
+      <div class="feature"><h4>Modern UI Design</h4><p>Clean, minimal, and aesthetic structure.</p></div>
+      <div class="feature"><h4>Responsive Layout</h4><p>Looks perfect on mobile, tablet, or desktop.</p></div>
+      <div class="feature"><h4>Gradient Backgrounds</h4><p>Eye-catching gradients that enhance appeal.</p></div>
+      <div class="feature"><h4>Animated Elements</h4><p>Subtle animations create a smooth user experience.</p></div>
+      <div class="feature"><h4>Call to Action Button</h4><p>Encourages user engagement.</p></div>
+      <div class="feature"><h4>Hover Effects</h4><p>Interactive hover transitions for visual feedback.</p></div>
+      <div class="feature"><h4>Sticky Header</h4><p>Navigation always visible while scrolling.</p></div>
+      <div class="feature"><h4>Grid Layout</h4><p>Organized content structure with flexibility.</p></div>
+      <div class="feature"><h4>Shadow Depth</h4><p>Gives 3D visual impact to components.</p></div>
+      <div class="feature"><h4>Fast Loading</h4><p>Optimized for performance and speed.</p></div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>📩 Contact: <a href="mailto:laxmikhanda@example.com">laxmikhanda@example.com</a> | 📞 +91 9876543210</p>
+    <p>© 2025 Laxmi Khanda | Designed with 💙 using HTML & CSS</p>
+  </footer>
+
+</body>
+</html>
